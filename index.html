@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Agency Name - Digital Solutions for Modern Businesses</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        /* Smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg fixed w-full z-50 py-4">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40/6366f1/ffffff?text=A" alt="Agency Logo" class="rounded-lg">
+                <span class="text-2xl font-bold text-indigo-600">Your Agency</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="lg:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul id="main-nav" class="hidden lg:flex space-x-8 text-lg font-medium">
+                <li><a href="#home" class="hover:text-indigo-600 transition duration-300">Home</a></li>
+                <li><a href="#services" class="hover:text-indigo-600 transition duration-300">Services</a></li>
+                <li><a href="#about" class="hover:text-indigo-600 transition duration-300">About Us</a></li>
+                <li><a href="#work" class="hover:text-indigo-600 transition duration-300">Our Work</a></li>
+                <li><a href="#testimonials" class="hover:text-indigo-600 transition duration-300">Testimonials</a></li>
+                <li><a href="#team" class="hover:text-indigo-600 transition duration-300">Team</a></li>
+                <li><a href="#blog" class="hover:text-indigo-600 transition duration-300">Blog</a></li>
+                <li><a href="#contact" class="px-5 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition duration-300 shadow-md">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-75 z-40 hidden lg:hidden">
+            <div class="flex justify-end p-4">
+                <button id="close-mobile-menu" class="text-white focus:outline-none">
+                    <i class="fas fa-times text-3xl"></i>
+                </button>
+            </div>
+            <ul class="flex flex-col items-center space-y-6 text-white text-2xl font-semibold mt-10">
+                <li><a href="#home" class="hover:text-indigo-300 transition duration-300 mobile-nav-link">Home</a></li>
+                <li><a href="#services" class="hover:text-indigo-300 transition duration-300 mobile-nav-link">Services</a></li>
+                <li><a href="#about" class="hover:text-indigo-300 transition duration-300 mobile-nav-link">About Us</a></li>
+                <li><a href="#work" class="hover:text-indigo-300 transition duration-300 mobile-nav-link">Our Work</a></li>
+                <li><a href="#testimonials" class="hover:text-indigo-300 transition duration-300 mobile-nav-link">Testimonials</a></li>
+                <li><a href="#team" class="hover:text-indigo-300 transition duration-300 mobile-nav-link">Team</a></li>
+                <li><a href="#blog" class="hover:text-indigo-300 transition duration-300 mobile-nav-link">Blog</a></li>
+                <li><a href="#contact" class="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition duration-300 shadow-md mobile-nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-32 md:py-48 flex items-center justify-center min-h-screen-minus-header">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                    Crafting Digital Experiences That Drive Growth
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-200">
+                    Your trusted partner for innovative website development, app solutions, and creative design.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up delay-400">
+                    <a href="#services" class="px-8 py-4 bg-white text-indigo-600 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg">
+                        Explore Our Services
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-white text-white rounded-full text-lg font-semibold hover:bg-white hover:text-indigo-600 transition duration-300 shadow-lg">
+                        Get a Free Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Our Core Services</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    We offer a comprehensive suite of digital solutions tailored to your business needs.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1: Website Development -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-globe"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Website Development</h3>
+                        <p class="text-gray-600 text-center">
+                            From custom web applications to robust e-commerce platforms, we build responsive and high-performing websites.
+                        </p>
+                        <a href="#" class="block text-indigo-600 font-medium mt-6 text-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+
+                    <!-- Service Card 2: App Development -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-mobile-alt"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">App Development</h3>
+                        <p class="text-gray-600 text-center">
+                            Crafting intuitive and engaging mobile applications for iOS and Android that stand out.
+                        </p>
+                        <a href="#" class="block text-indigo-600 font-medium mt-6 text-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+
+                    <!-- Service Card 3: Graphic Design -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-paint-brush"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Graphic Design</h3>
+                        <p class="text-gray-600 text-center">
+                            Stunning visuals, brand identity, and compelling marketing materials that capture attention.
+                        </p>
+                        <a href="#" class="block text-indigo-600 font-medium mt-6 text-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+
+                    <!-- Service Card 4: Video Editing -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-video"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Video Editing</h3>
+                        <p class="text-gray-600 text-center">
+                            Professional video production and editing to tell your story and engage your audience.
+                        </p>
+                        <a href="#" class="block text-indigo-600 font-medium mt-6 text-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+
+                    <!-- Service Card 5: Social Media Management -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-share-alt"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Social Media Management</h3>
+                        <p class="text-gray-600 text-center">
+                            Building and managing your online presence to connect with your audience and grow your brand.
+                        </p>
+                        <a href="#" class="block text-indigo-600 font-medium mt-6 text-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+
+                    <!-- Service Card 6: Meta Ads -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fab fa-facebook-f"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Meta Ads (Facebook/Instagram)</h3>
+                        <p class="text-gray-600 text-center">
+                            Targeted advertising campaigns on Meta platforms to maximize your reach and conversions.
+                        </p>
+                        <a href="#" class="block text-indigo-600 font-medium mt-6 text-center hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="https://placehold.co/600x400/e0e7ff/4338ca?text=About+Us+Image" alt="About Us" class="rounded-xl shadow-2xl w-full h-auto object-cover">
+                </div>
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">About Our Agency</h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        At <span class="font-semibold text-indigo-600">Your Agency Name</span>, we are passionate about transforming ideas into impactful digital realities. With a team of dedicated experts in web development, app creation, and creative design, we've helped numerous businesses achieve their online goals.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        Our approach is collaborative and client-centric, focusing on delivering bespoke solutions that not only look great but also perform exceptionally, driving measurable results for your business.
+                    </p>
+                    <a href="#contact" class="px-6 py-3 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 shadow-md">
+                        Let's Work Together
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Why Choose Your Agency?</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    We combine technical expertise with creative vision to deliver outstanding results.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-rocket"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Results-Driven Approach</h3>
+                        <p class="text-gray-600 text-center">
+                            Our focus is on delivering tangible outcomes that contribute directly to your business growth.
+                        </p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-users"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Experienced Team</h3>
+                        <p class="text-gray-600 text-center">
+                            Leverage the expertise of our seasoned professionals across all digital disciplines.
+                        </p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Innovative Solutions</h3>
+                        <p class="text-gray-600 text-center">
+                            We stay ahead of trends, offering cutting-edge technologies and creative strategies.
+                        </p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-handshake"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Transparent Communication</h3>
+                        <p class="text-gray-600 text-center">
+                            Clear and consistent communication ensures you're always informed and involved.
+                        </p>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Quality & Reliability</h3>
+                        <p class="text-gray-600 text-center">
+                            We pride ourselves on delivering high-quality, robust, and reliable digital products.
+                        </p>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200">
+                        <div class="text-indigo-600 text-5xl mb-6 text-center"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Measurable ROI</h3>
+                        <p class="text-gray-600 text-center">
+                            Our strategies are designed to provide a clear return on your investment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Our Streamlined Process</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    We follow a proven methodology to ensure successful project delivery and client satisfaction.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+                        <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4">1</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Discovery & Strategy</h3>
+                        <p class="text-gray-600">Understanding your vision, goals, and target audience to lay a solid foundation.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+                        <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4">2</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Design & Planning</h3>
+                        <p class="text-gray-600">Crafting intuitive user experiences and stunning visual designs.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+                        <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4">3</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Development & Testing</h3>
+                        <p class="text-gray-600">Bringing designs to life with clean code and rigorous quality assurance.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+                        <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mb-4">4</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Launch & Support</h3>
+                        <p class="text-gray-600">Deploying your solution and providing ongoing support and maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio / Work Section -->
+        <section id="work" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Our Recent Work</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Explore some of our successful projects and see the quality of our craftsmanship.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200 overflow-hidden">
+                        <img src="https://placehold.co/600x400/e0e7ff/4338ca?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">E-commerce Redesign</h3>
+                            <p class="text-gray-600 mb-4">A complete overhaul of an online retail platform, focusing on UX and conversion.</p>
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">Website Development</span>
+                            <a href="#" class="block text-indigo-600 font-medium mt-4 hover:underline">View Case Study <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200 overflow-hidden">
+                        <img src="https://placehold.co/600x400/e0e7ff/4338ca?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Mobile App for Start-up</h3>
+                            <p class="text-gray-600 mb-4">Developed a cross-platform mobile application for a new tech start-up.</p>
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">App Development</span>
+                            <a href="#" class="block text-indigo-600 font-medium mt-4 hover:underline">View Case Study <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200 overflow-hidden">
+                        <img src="https://placehold.co/600x400/e0e7ff/4338ca?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Brand Identity & Collateral</h3>
+                            <p class="text-gray-600 mb-4">Created a cohesive brand identity and marketing materials for a new business.</p>
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">Graphic Design</span>
+                            <a href="#" class="block text-indigo-600 font-medium mt-4 hover:underline">View Case Study <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#" class="px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 shadow-md">
+                        View All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">What Our Clients Say</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Hear directly from businesses that have experienced our commitment to excellence.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center text-center">
+                        <img src="https://placehold.co/80x80/6366f1/ffffff?text=JD" alt="Client Avatar" class="w-20 h-20 rounded-full mb-6 object-cover border-4 border-indigo-200">
+                        <p class="text-gray-700 text-lg italic mb-6">
+                            "Your Agency transformed our online presence. Their web development team is incredibly skilled and delivered a site that exceeded our expectations. Highly recommend!"
+                        </p>
+                        <p class="font-semibold text-gray-900 text-xl">Jane Doe</p>
+                        <p class="text-gray-600">CEO, Tech Solutions Inc.</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center text-center">
+                        <img src="https://placehold.co/80x80/6366f1/ffffff?text=SM" alt="Client Avatar" class="w-20 h-20 rounded-full mb-6 object-cover border-4 border-indigo-200">
+                        <p class="text-gray-700 text-lg italic mb-6">
+                            "The graphic design work for our new branding was outstanding. Creative, professional, and perfectly captured our vision. A truly talented team!"
+                        </p>
+                        <p class="font-semibold text-gray-900 text-xl">Sarah M. </p>
+                        <p class="text-gray-600">Marketing Director, Global Brands</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center text-center">
+                        <img src="https://placehold.co/80x80/6366f1/ffffff?text=RK" alt="Client Avatar" class="w-20 h-20 rounded-full mb-6 object-cover border-4 border-indigo-200">
+                        <p class="text-gray-700 text-lg italic mb-6">
+                            "We saw a significant increase in engagement after Your Agency managed our Meta Ads. Their strategic approach is top-notch. Fantastic results!"
+                        </p>
+                        <p class="font-semibold text-gray-900 text-xl">Robert K.</p>
+                        <p class="text-gray-600">Founder, E-commerce Innovators</p>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center text-center">
+                        <img src="https://placehold.co/80x80/6366f1/ffffff?text=LM" alt="Client Avatar" class="w-20 h-20 rounded-full mb-6 object-cover border-4 border-indigo-200">
+                        <p class="text-gray-700 text-lg italic mb-6">
+                            "The app development process was smooth and collaborative. The final product is robust, user-friendly, and exactly what we needed. Great job!"
+                        </p>
+                        <p class="font-semibold text-gray-900 text-xl">Lisa M.</p>
+                        <p class="text-gray-600">Project Lead, Mobile Solutions Co.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Meet Our Talented Team</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Behind every successful project is a dedicated team of passionate professionals.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-200 text-center">
+                        <img src="https://placehold.co/150x150/e0e7ff/4338ca?text=John+D" alt="Team Member John Doe" class="w-36 h-36 rounded-full mx-auto mb-4 object-cover border-4 border-indigo-200">
+                        <h3 class="text-xl font-semibold text-gray-900">John Doe</h3>
+                        <p class="text-indigo-600 font-medium mb-2">Founder & CEO</p>
+                        <p class="text-gray-600 text-sm">Visionary leader guiding our agency's strategic direction.</p>
+                        <div class="flex justify-center space-x-4 mt-4">
+                            <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-200 text-center">
+                        <img src="https://placehold.co/150x150/e0e7ff/4338ca?text=Jane+S" alt="Team Member Jane Smith" class="w-36 h-36 rounded-full mx-auto mb-4 object-cover border-4 border-indigo-200">
+                        <h3 class="text-xl font-semibold text-gray-900">Jane Smith</h3>
+                        <p class="text-indigo-600 font-medium mb-2">Lead Web Developer</p>
+                        <p class="text-gray-600 text-sm">Building robust and scalable web solutions with cutting-edge tech.</p>
+                        <div class="flex justify-center space-x-4 mt-4">
+                            <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300"><i class="fab fa-github text-xl"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-200 text-center">
+                        <img src="https://placehold.co/150x150/e0e7ff/4338ca?text=Mike+W" alt="Team Member Mike Williams" class="w-36 h-36 rounded-full mx-auto mb-4 object-cover border-4 border-indigo-200">
+                        <h3 class="text-xl font-semibold text-gray-900">Mike Williams</h3>
+                        <p class="text-indigo-600 font-medium mb-2">Creative Director</p>
+                        <p class="text-gray-600 text-sm">Leading our design team to create visually stunning and effective brands.</p>
+                        <div class="flex justify-center space-x-4 mt-4">
+                            <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300"><i class="fab fa-behance text-xl"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-200 text-center">
+                        <img src="https://placehold.co/150x150/e0e7ff/4338ca?text=Emily+C" alt="Team Member Emily Chen" class="w-36 h-36 rounded-full mx-auto mb-4 object-cover border-4 border-indigo-200">
+                        <h3 class="text-xl font-semibold text-gray-900">Emily Chen</h3>
+                        <p class="text-indigo-600 font-medium mb-2">Marketing Strategist</p>
+                        <p class="text-gray-600 text-sm">Driving growth through data-driven social media and ad campaigns.</p>
+                        <div class="flex justify-center space-x-4 mt-4">
+                            <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="cta" class="py-16 md:py-24 bg-gradient-to-r from-indigo-700 to-purple-800 text-white text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
+                <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">
+                    Let's discuss your project and build something amazing together.
+                </p>
+                <a href="#contact" class="px-8 py-4 bg-white text-indigo-700 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg">
+                    Start Your Project Today
+                </a>
+            </div>
+        </section>
+
+        <!-- Blog/Insights Section -->
+        <section id="blog" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Latest Insights from Our Blog</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Stay updated with the latest trends, tips, and news in the digital world.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Blog Post 1 -->
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200 overflow-hidden">
+                        <img src="https://placehold.co/600x300/e0e7ff/4338ca?text=Blog+Post+1" alt="Blog Post 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">The Future of Web Development: Next.js & Beyond</h3>
+                            <p class="text-gray-600 text-sm mb-4">July 10, 2025 | Web Development</p>
+                            <p class="text-gray-700 mb-4">Explore how modern frameworks like Next.js are shaping the landscape of web development...</p>
+                            <a href="#" class="text-indigo-600 font-medium hover:underline">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <!-- Blog Post 2 -->
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200 overflow-hidden">
+                        <img src="https://placehold.co/600x300/e0e7ff/4338ca?text=Blog+Post+2" alt="Blog Post 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">5 Essential Graphic Design Trends for 2025</h3>
+                            <p class="text-gray-600 text-sm mb-4">June 28, 2025 | Graphic Design</p>
+                            <p class="text-gray-700 mb-4">Stay ahead of the curve with these must-know design trends that will dominate 2025...</p>
+                            <a href="#" class="text-indigo-600 font-medium hover:underline">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <!-- Blog Post 3 -->
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200 overflow-hidden">
+                        <img src="https://placehold.co/600x300/e0e7ff/4338ca?text=Blog+Post+3" alt="Blog Post 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Maximizing ROI with Targeted Meta Ads</h3>
+                            <p class="text-gray-600 text-sm mb-4">June 15, 2025 | Digital Marketing</p>
+                            <p class="text-gray-700 mb-4">Learn how to optimize your Meta Ads campaigns for better reach and conversion rates...</p>
+                            <a href="#" class="text-indigo-600 font-medium hover:underline">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#" class="px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 shadow-md">
+                        View All Articles
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Frequently Asked Questions</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Find answers to common questions about our services and process.
+                </p>
+
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg border border-gray-200">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-xl font-semibold text-left text-gray-900 hover:bg-gray-100 rounded-xl focus:outline-none">
+                            <span>How long does it take to build a website?</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 pt-0 text-gray-700">
+                            The timeline varies based on complexity, features, and content. A basic website might take 4-6 weeks, while a complex e-commerce platform could take 3-6 months. We provide a detailed timeline after the discovery phase.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg border border-gray-200">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-xl font-semibold text-left text-gray-900 hover:bg-gray-100 rounded-xl focus:outline-none">
+                            <span>What is your pricing model?</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 pt-0 text-gray-700">
+                            Our pricing is project-based, tailored to your specific requirements. We offer transparent quotes after understanding your needs. For ongoing services like social media management, we have monthly retainer options.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg border border-gray-200">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-xl font-semibold text-left text-gray-900 hover:bg-gray-100 rounded-xl focus:outline-none">
+                            <span>Do you provide post-launch support?</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 pt-0 text-gray-700">
+                            Yes, we offer comprehensive post-launch support and maintenance packages to ensure your website or app remains secure, updated, and performs optimally.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg border border-gray-200">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-xl font-semibold text-left text-gray-900 hover:bg-gray-100 rounded-xl focus:outline-none">
+                            <span>Can you help with SEO and digital marketing?</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 pt-0 text-gray-700">
+                            Absolutely! We integrate SEO best practices into all our web development projects. Additionally, we offer dedicated services for Social Media Management and Meta Ads to boost your online visibility and conversions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Get in Touch</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Have a project in mind or just want to say hello? We'd love to hear from you.
+                </p>
+
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-lg" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-lg font-medium text-gray-700 mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-lg" placeholder="john.doe@example.com" required>
+                        </div>
+                        <div>
+                            <label for="service" class="block text-lg font-medium text-gray-700 mb-2">Interested Service</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-lg">
+                                <option value="">Select a Service</option>
+                                <option value="website-development">Website Development</option>
+                                <option value="app-development">App Development</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="video-editing">Video Editing</option>
+                                <option value="social-media-management">Social Media Management</option>
+                                <option value="meta-ads">Meta Ads</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-lg font-medium text-gray-700 mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-lg" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 shadow-md">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location/Map Section (Optional, if applicable) -->
+        <section id="location" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">Find Us</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Our office is located in the heart of the city. Feel free to drop by!
+                </p>
+                <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <!-- Placeholder for embedded map (e.g., Google Maps iframe) -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.250567617478!2d-122.4194157846812!3d37.77492957975997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808580858085%3A0x8085808580858085!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-xl"
+                    ></iframe>
+                </div>
+                <div class="mt-8 text-lg text-gray-700">
+                    <p><i class="fas fa-map-marker-alt text-indigo-600 mr-2"></i> 123 Digital Way, Suite 456, City, State, 12345</p>
+                    <p class="mt-2"><i class="fas fa-phone text-indigo-600 mr-2"></i> +1 (123) 456-7890</p>
+                    <p class="mt-2"><i class="fas fa-envelope text-indigo-600 mr-2"></i> info@youragency.com</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- About Us -->
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-indigo-400">Your Agency</h3>
+                <p class="text-gray-400 text-sm">
+                    We are a leading digital agency specializing in website development, app creation, and comprehensive digital marketing solutions.
+                </p>
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+            </div>
+
+            <!-- Services Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-indigo-400">Services</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Website Development</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">App Development</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Graphic Design</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Video Editing</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Social Media Management</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Meta Ads</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-indigo-400">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                    <li><a href="#work" class="text-gray-400 hover:text-white transition duration-300">Our Work</a></li>
+                    <li><a href="#blog" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                    <li><a href="#faq" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-indigo-400">Contact Info</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Digital Way, City, State, 12345</li>
+                    <li><i class="fas fa-phone mr-2"></i> +1 (123) 456-7890</li>
+                    <li><i class="fas fa-envelope mr-2"></i> info@youragency.com</li>
+                    <li><i class="fas fa-clock mr-2"></i> Mon - Fri: 9:00 AM - 5:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500 text-sm">
+            &copy; 2025 Your Agency Name. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                if (document.getElementById('mobile-menu-overlay').classList.contains('flex')) {
+                    document.getElementById('mobile-menu-overlay').classList.add('hidden');
+                    document.getElementById('mobile-menu-overlay').classList.remove('flex');
+                }
+            });
+        });
+
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenuOverlay.classList.remove('hidden');
+            mobileMenuOverlay.classList.add('flex');
+        });
+
+        closeMobileMenuButton.addEventListener('click', () => {
+            mobileMenuOverlay.classList.remove('flex');
+            mobileMenuOverlay.classList.add('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuOverlay.classList.remove('flex');
+                mobileMenuOverlay.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+
+                // Close all other open FAQs
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    if (item !== content && !item.classList.contains('hidden')) {
+                        item.classList.add('hidden');
+                        item.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+
+                // Toggle current FAQ
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>
